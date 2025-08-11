@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, article, footer {
+      margin-bottom: 2em;
+    }
+    form {
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.25em;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 0.5em;
+    }
+    table {
+      width: 100%;
+      margin-top: 1em;
+    }
+    ul {
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This is Jusper's Enhanced Form</h1>
+    <p>This form shows Jusper's undertanding of HTML5 using an enhanced form.</p>
+  </header>
+
+  <section>
+    <h2>Favourite Programming Languages for Jusper</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>PYTHON</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Form Submission</h2>
+    <form action="/submit" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Enter your  Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="emailaddress@gmail.com" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="readonly-example">Referral Code</label>
+        <input type="text" id="readonly-example" name="referral" value="ABC123" readonly />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>Choose your subscription type:</label>
+        <input type="radio" id="basic" name="subscription" value="basic" required />
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="subscription" value="premium" />
+        <label for="premium">Premium</label>
+
+        <label for="interests">Select your interests:</label>
+        <select id="interests" name="interests" multiple>
+          <option value="tech">Technology</option>
+          <option value="art">Art</option>
+          <option value="music">Music</option>
+        </select>
+
+        <label for="newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter" checked />
+          Subscribe to newsletter
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="feedback">Your Comments</label>
+        <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Sample Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Supported</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Placeholder</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>Required Fields</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>Readonly Fields</td>
+          <td>✔</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Examples</h2>
+    <article>
+      <h3>Sample Image</h3>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder example image" />
+    </article>
+
+    <article>
+      <h3>Embedded Video</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; Jusper Ageri|2025|All rights reserved.</p>
+  </footer>
+</body>
+</html>
